@@ -41,16 +41,8 @@ For example, containsAnd(['panda', 'ran', 'and']) returns ['panda', 'and'].
 ------------------------------------------------------------------------------------------------ */
 
 const containsAnd = (arr) => {
-  let resarray = arr;
-  let andWord = 'and';
-  let ands = array.filter(item => {
-    if (item.includes(andWord)) {
-      return true;
-    }
-  });
-  return ands;
-
-
+  let newarray = arr.filter(item => item.includes('and'))
+  return newarray;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -83,7 +75,7 @@ const notInFirstArray = (forbiddenValues, arr) => {
   let secondArray = arr;
 
   let notIncludedArr = secondArray.filter(item => {
-    if ( !(firstArry.includes(item)) ) {
+    if (!(firstArry.includes(item))) {
       return true;
     }
   });
