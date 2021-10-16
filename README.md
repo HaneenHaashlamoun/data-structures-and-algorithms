@@ -18,6 +18,12 @@ To run your tests
 - run `npm test` to run all of the tests
 - run `npm test ##` to only run tests for challenge ## (i.e. 01)
 
+
 ### 401 Data Structures, Code Challenges
 
 - Please follow the instructions specific to your 401 language, which can be found in the directory below, matching your course.
+
+|Code Challenge|Link|
+|------|------|
+|array-reverse|[1](https://github.com/HaneenHaashlamoun/data-structures-and-algorithms/blob/array-reverse/python/code_challenges/array-reverse/README.md)|
+|array-insert-shift|[2](https://github.com/HaneenHaashlamoun/data-structures-and-algorithms/blob/array-insert-shift/python/code_challenges/array-insert-shift/README.md)|
