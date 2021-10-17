@@ -25,3 +25,6 @@ To run your tests
 |Code Challenge|Link|
 |------|------|
 |array-reverse|[1](https://github.com/HaneenHaashlamoun/data-structures-and-algorithms/blob/array-reverse/python/code_challenges/array-reverse/README.md)|
+|array-insert-shift|[2](https://github.com/HaneenHaashlamoun/data-structures-and-algorithms/blob/array-insert-shift/python/code_challenges/array-insert-shift/README.md)|
+|array-binary-search|[3](https://github.com/HaneenHaashlamoun/data-structures-and-algorithms/blob/array-binary-search/python/code_challenges/array_binary_search/README.md)|
+|Linked_list|[5](https://github.com/HaneenHaashlamoun/data-structures-and-algorithms/blob/linked-list/README.md)|
