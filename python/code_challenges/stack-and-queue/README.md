@@ -43,6 +43,8 @@ https://github.com/HaneenHaashlamoun/data-structures-and-algorithms/pull/20
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+OOP  Stacks and Queues
+O(1) for each function
 
 ## API
 <!-- Description of each method publicly available to your Stack and Queue-->
