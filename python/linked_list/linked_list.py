@@ -60,6 +60,18 @@ class Linked_list:
                 break
             current = current.next
 
+    def __str__(self):
+        """
+        to string method to print out the linked list in "{ a } -> { b } -> { c } -> NULL" format        
+        
+        """
+        current =self.head
+        result =''
+        while current is not None:
+            result += "{ " + str(current.value)+ " } -> "
+            current = current.next
+        result += 'NULL'
+        return result
 
 # test
 # if __name__ == "__main__":

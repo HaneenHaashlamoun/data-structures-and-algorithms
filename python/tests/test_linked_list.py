@@ -33,3 +33,18 @@ def test_insert_multiple_nodes():
     linked_list.insert(9)
     assert linked_list.head.value == 9
 
+def test_linked_contain():     
+    expected = True
+    ll = Linked_list()
+    testx= ll.insert(2)    
+    actual = ll.includes(2)    
+    assert expected == actual
+
+def test_to_string():    
+    expected = "{ a } -> { b } -> { c } -> NULL"
+    ll = Linked_list()    
+    node1= ll.insert("c")
+    node2= ll.insert("b")
+    node3= ll.insert("a")
+    actual= ll.__str__()    
+    assert actual == expected

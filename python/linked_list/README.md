@@ -1,8 +1,9 @@
 # Singly Linked List
 <!-- Short summary or background information -->
-https://github.com/HaneenHaashlamoun/data-structures-and-algorithms/pull/18
+https://github.com/HaneenHaashlamoun/data-structures-and-algorithms/pull/19
 
 **Specifications**
+
 [x] Read all of these instructions carefully.
 
 [x] Name things exactly as described.
@@ -22,4 +23,10 @@ https://github.com/HaneenHaashlamoun/data-structures-and-algorithms/pull/18
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
-Classes and methods , nodes and and linked lists.
+Classes and methods , nodes and and linked lists. 
+| Method | Time | Space |
+| ----------- | ----------- | ------------- |
+| Insert | O(1) | O(1) |
+| Includes | O(n) | O(1) |
+| Print | O(n) | O(1) |
+
