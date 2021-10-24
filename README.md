@@ -25,6 +25,12 @@ To run your tests
 
 |Code Challenge|Link|
 |------|------|
-|array-reverse|[1](https://github.com/HaneenHaashlamoun/data-structures-and-algorithms/blob/array-reverse/python/code_challenges/array-reverse/README.md)|
-|array-insert-shift|[2](https://github.com/HaneenHaashlamoun/data-structures-and-algorithms/blob/array-insert-shift/python/code_challenges/array-insert-shift/README.md)|
-|array-binary-search|[3](https://github.com/HaneenHaashlamoun/data-structures-and-algorithms/blob/array-binary-search/python/code_challenges/array_binary_search/README.md)|
+|array-reverse|[readme](https://github.com/HaneenHaashlamoun/data-structures-and-algorithms/blob/array-reverse/python/code_challenges/array-reverse/README.md)|
+|array-insert-shift|[readme](https://github.com/HaneenHaashlamoun/data-structures-and-algorithms/blob/array-insert-shift/python/code_challenges/array-insert-shift/README.md)|
+|array-binary-search|[readme](https://github.com/HaneenHaashlamoun/data-structures-and-algorithms/blob/array-binary-search/python/code_challenges/array_binary_search/README.md)|
+| Single LinkedList| [readme]() |
+| linked-list-insertions| [readme]()|
+| linked-list-kth| [readme]() |
+| linked-list-zip| [readme]() |
+| Reverse-linked-list| [readme]() |
+|stack-and-queue|[readme](https://github.com/HaneenHaashlamoun/data-structures-and-algorithms/blob/stack-and-queue/python/code_challenges/stack-and-queue/README.md)|
