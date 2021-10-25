@@ -1,5 +1,84 @@
-from linked_list.linked_list import LinkedList
+import pytest
+from linked_list.linked_list import Linked_list, Node
 
 
 def test_import():
-    assert LinkedList
+    assert Linked_list
+
+
+def test_instantiate_empty_list():
+    linked_list = Linked_list()
+    assert linked_list
+
+
+def test_insert():
+    linked_list = Linked_list()
+    linked_list.insert("first")
+    actual = linked_list.head.value
+    assert actual == "first"
+
+
+def test_head():
+    node1 = Node(5)
+    linked_list = Linked_list()
+    linked_list.head = node1
+    assert linked_list.head == node1
+
+
+def test_insert_multiple_nodes():
+    node1 = Node(1)
+    linked_list = Linked_list()
+    linked_list.head = node1
+    linked_list.insert(4)
+    assert linked_list.head.value == 4
+    linked_list.insert(6)
+    assert linked_list.head.value == 6
+    linked_list.insert(9)
+    assert linked_list.head.value == 9
+
+
+def test_linked_contain():
+    expected = True
+    ll = Linked_list()
+    testx = ll.insert(2)
+    actual = ll.includes(2)
+    assert expected == actual
+
+
+def test_to_string():
+    expected = "{ a } -> { b } -> { c } -> NULL"
+    ll = Linked_list()
+    node1 = ll.insert("c")
+    node2 = ll.insert("b")
+    node3 = ll.insert("a")
+    actual = ll.__str__()
+    assert actual == expected
+
+####################### TEST:  Linked_List_Insertion #######################
+
+def test_append_one():
+    expected = "{ 2 } -> { 5 } -> NULL"
+    ll = Linked_list()
+    node1 = ll.insert(2)
+    node2 = ll.append(5)
+    actual = str(ll)
+    assert actual == expected
+
+
+def test_insert_before():
+    expected = "{ 3 } -> { 5 } -> { 1 } -> NULL"
+    ll = Linked_list()
+    node1 = ll.insert(1)
+    node1 = ll.insert(3)
+    node2 = ll.insert_before(1, 5)
+    actual = str(ll)
+    assert actual == expected
+
+def test_insert_after():
+  expected ="{ 5 } -> { 1 } -> { 3 } -> NULL"
+  ll = Linked_list()
+  node1= ll.insert(5)
+  node2 = ll.insert(1)
+  actual= ll.insert_after(1,3)
+  assert actual == expected
+  
