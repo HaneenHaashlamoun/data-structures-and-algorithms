@@ -35,4 +35,4 @@ To run your tests
 | Reverse-linked-list| [readme]() |
 |stack-and-queue|[readme](https://github.com/HaneenHaashlamoun/data-structures-and-algorithms/blob/stack-and-queue/python/code_challenges/stack-and-queue/README.md)|
 |stack_queue_pseudo|[readme](https://github.com/HaneenHaashlamoun/data-structures-and-algorithms/blob/stack-queue-pseudo/python/code_challenges/stack_queue_pseudo/README.md)|
-                            
+|stack_queue_animal_shelter|[readme](https://github.com/HaneenHaashlamoun/data-structures-and-algorithms/blob/stack-queue-animal-shelter/python/code_challenges/stack_queue_animal_shelter/README.md)|
