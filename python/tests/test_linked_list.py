@@ -74,11 +74,22 @@ def test_insert_before():
     actual = str(ll)
     assert actual == expected
 
+# def test_inseartAfter():
+#     List=Linked_list()
+#     List.insert_after(1,11)
+#     List.insert_after(2,22)
+#     List.insert_after(3,33)
+#     actual=List.__str__()
+#     expected='{1}-> {11}-> {3}-> {33}-> {5}-> NULL'
+#     assert actual == expected
+
 def test_insert_after():
-  expected ="{ 5 } -> { 1 } -> { 3 } -> NULL"
-  ll = Linked_list()
-  node1= ll.insert(5)
-  node2 = ll.insert(1)
-  actual= ll.insert_after(1,3)
-  assert actual == expected
+  def test_inseartAfter():
+    List=Linked_list()
+    List.insertAfter(1,11)
+    List.insertAfter(2,22)
+    List.insertAfter(3,33)
+    actual=List.__str__()
+    expected='{1}-> {11}-> {2}-> {22}-> {3}-> {33}-> {4}-> {5}-> NULL'
+    assert actual == expected
   

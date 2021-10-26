@@ -51,14 +51,25 @@ class Linked_list:
                 current_node = current_node.next
 
     def insert_after(self, value, new_value):
-        new_node = Node(new_value)
         current = self.head
-        while current:
+        while current is not None:
             if current.value == value:
-                new_node.next = current.next
-                current.next = new_node
                 break
             current = current.next
+        if current is None:
+            raise Exception(" the value does not exist ")
+        else:
+            new_node = Node(new_value)
+            new_node.next = current.next
+            current.next = new_node
+        # new_node = Node(new_value)
+        # current = self.head
+        # while current:
+        #     if current.value == value:
+        #         new_node.next = current.next
+        #         current.next = new_node
+        #         break
+        #     current = current.next
 
     def __str__(self):
         """
