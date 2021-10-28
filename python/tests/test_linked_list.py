@@ -1,5 +1,5 @@
 import pytest
-from linked_list.linked_list import Linked_list, Node
+from linked_list.linked_list import Linked_list, Node, zip_Lists
 
 
 def test_import():
@@ -123,3 +123,50 @@ def test_k_negative():
     ll.append(13)
     actual=ll.kth_from_end(-4)    
     assert excepted==actual
+
+
+####################### TEST:  Linked List ZIP #######################
+
+def test_empty_lists():     
+    excepted='empty list'     
+    first_ll =Linked_list()
+    second_ll =Linked_list()
+    actual= zip_Lists(first_ll,second_ll)
+    #Assert
+    assert excepted==actual
+
+
+def test_first_list_empty():     
+    excepted="{ 5 } -> { 3 } -> { 2 } -> NULL"     
+    first_ll =Linked_list()
+    second_ll =Linked_list()
+    second_ll.insert(5)
+    second_ll.append(3)
+    second_ll.append(2)
+    actual= zip_Lists(first_ll,second_ll)    
+    assert excepted==actual
+
+def test_second_list_empty():
+    excepted="{ 5 } -> { 3 } -> { 2 } -> NULL"     
+    first_ll =Linked_list()
+    second_ll =Linked_list()
+    first_ll.insert(5)
+    first_ll.append(3)
+    first_ll.append(2)
+    actual= zip_Lists(first_ll,second_ll)    
+    assert excepted==actual
+
+def test_zipped_List():    
+    excepted="{ 1 } -> { 5 } -> { 7 } -> { 3 } -> { 4 } -> { 2 } -> NULL"     
+    first_ll =Linked_list()
+    first_ll.insert(1)
+    first_ll.append(7)
+    first_ll.append(4)
+    #second list
+    second_ll =Linked_list()
+    second_ll.insert(5)
+    second_ll.append(3)
+    second_ll.append(2)
+    print(str(second_ll))
+    actual= zip_Lists(first_ll,second_ll)
+    assert excepted==actual    

@@ -1,3 +1,27 @@
+# Code Chalenge 8: linked-list-zip
+<!-- Short summary or background information -->
+https://github.com/HaneenHaashlamoun/data-structures-and-algorithms/pull/27
+
+**Specifications**
+
+- [x] Write a function called zip lists
+- [x] Arguments: 2 linked lists
+- [x] Return: Linked List, zipped as noted below
+- [x] Zip the two linked lists together into one so that the nodes alternate between the two lists and return a reference to the head of the zipped list.
+- [x] Try and keep additional space down to O(1)
+- [x] You have access to the Node class and all the properties on the Linked List class as well as the methods created in previous challenges.
+
+## Challenge
+<!-- Description of the challenge -->
+![x](Linked_List_zip.jpg)
+
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+loop + if condition to zip the two list
+
+
+---------------------------------------------------------------------
+
 # Code Chalenge 7: linked-list-kth
 <!-- Short summary or background information -->
 https://github.com/HaneenHaashlamoun/data-structures-and-algorithms/pull/26

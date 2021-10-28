@@ -3,6 +3,7 @@ class Node:
         self.value = value
         self.next = None
 
+
 class Linked_list:
     def __init__(self, head=None):
         self.head = head
@@ -70,20 +71,20 @@ class Linked_list:
         #         current.next = new_node
         #         break
         #     current = current.next
-        
+
     def __str__(self):
         """
         to string method to print out the linked list in "{ a } -> { b } -> { c } -> NULL" format        
-        
+
         """
-        current =self.head
-        result =''
+        current = self.head
+        result = ''
         while current is not None:
-            result += "{ " + str(current.value)+ " } -> "
+            result += "{ " + str(current.value) + " } -> "
             current = current.next
         result += 'NULL'
         return result
-    
+
     def kth_from_end(self, k):
         current = self.head
         length = 1
@@ -100,6 +101,32 @@ class Linked_list:
             if i == value:
                 return current.data
             current = current.next
+
+
+def zip_Lists(list1, list2):    
+    first_list = list1.head
+    second_list = list2.head
+
+    if not first_list and not second_list:
+        return 'empty list'
+    elif not first_list:
+        return str(list2)
+    elif not second_list:
+        return str(list1)
+
+    hold_node = ''
+    while first_list and second_list:
+        if second_list:
+            hold_node = first_list.next
+            first_list.next = second_list
+            first_list = hold_node
+
+        if first_list:
+            hold_node = second_list.next
+            second_list.next = first_list
+            second_list = hold_node
+    return str(list1)
+
 
 # test
 # if __name__ == "__main__":
