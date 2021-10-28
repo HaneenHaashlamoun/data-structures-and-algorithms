@@ -70,7 +70,7 @@ class Linked_list:
         #         current.next = new_node
         #         break
         #     current = current.next
-
+        
     def __str__(self):
         """
         to string method to print out the linked list in "{ a } -> { b } -> { c } -> NULL" format        
@@ -83,6 +83,23 @@ class Linked_list:
             current = current.next
         result += 'NULL'
         return result
+    
+    def kth_from_end(self, k):
+        current = self.head
+        length = 1
+        while current.next:
+            length += 1
+            current = current.next
+        current = self.head
+        if k < 0:
+            return 'negative value not allowed'
+        elif k >= length:
+            return 'out of range'
+        value = length-k-1
+        for i in range(length):
+            if i == value:
+                return current.data
+            current = current.next
 
 # test
 # if __name__ == "__main__":
