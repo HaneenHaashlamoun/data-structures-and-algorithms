@@ -93,3 +93,33 @@ def test_insert_after():
     expected='{1}-> {11}-> {2}-> {22}-> {3}-> {33}-> {4}-> {5}-> NULL'
     assert actual == expected
   
+
+def test_k_index_out_of_range():
+    excepted='out of range'
+    ll=Linked_list()
+    ll.insert(3)
+    ll.insert(2)
+    ll.insert(2)
+    ll.append(13)
+    actual=ll.kth_from_end(5)
+    assert excepted==actual
+
+def test_k_and_length_the_same():     
+    excepted='out of range'     
+    ll=Linked_list()
+    ll.insert(3)
+    ll.insert(2)
+    ll.insert(2)
+    ll.append(13)
+    actual=ll.kth_from_end(4)
+    assert excepted==actual
+
+def test_k_negative():     
+    excepted='negative value not allowed'     
+    ll=Linked_list()
+    ll.insert(3)
+    ll.insert(2)
+    ll.insert(2)
+    ll.append(13)
+    actual=ll.kth_from_end(-4)    
+    assert excepted==actual

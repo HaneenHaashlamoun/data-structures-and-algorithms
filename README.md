@@ -29,11 +29,12 @@ To run your tests
 |array-insert-shift|[readme](https://github.com/HaneenHaashlamoun/data-structures-and-algorithms/blob/array-insert-shift/python/code_challenges/array-insert-shift/README.md)|
 |array-binary-search|[readme](https://github.com/HaneenHaashlamoun/data-structures-and-algorithms/blob/array-binary-search/python/code_challenges/array_binary_search/README.md)|
 | Single LinkedList| [readme]() |
-| linked-list-insertions| [readme]()|
-| linked-list-kth| [readme]() |
+| linked-list-insertions| [readme](https://github.com/HaneenHaashlamoun/data-structures-and-algorithms/blob/linked-list-kth/python/linked_list/README.md)|
+| linked-list-kth| [readme](https://github.com/HaneenHaashlamoun/data-structures-and-algorithms/blob/linked-list-kth/python/linked_list/README.md) |
 | linked-list-zip| [readme]() |
 | Reverse-linked-list| [readme]() |
 |stack-and-queue|[readme](https://github.com/HaneenHaashlamoun/data-structures-and-algorithms/blob/stack-and-queue/python/code_challenges/stack-and-queue/README.md)|
 |stack_queue_pseudo|[readme](https://github.com/HaneenHaashlamoun/data-structures-and-algorithms/blob/stack-queue-pseudo/python/code_challenges/stack_queue_pseudo/README.md)|
 |stack_queue_animal_shelter|[readme](https://github.com/HaneenHaashlamoun/data-structures-and-algorithms/blob/stack-queue-animal-shelter/python/code_challenges/stack_queue_animal_shelter/README.md)|
 |stack_queue_brackets|[readme](https://github.com/HaneenHaashlamoun/data-structures-and-algorithms/blob/stack-queue-brackets/python/code_challenges/stack_queue_brackets/README.md)|
+
