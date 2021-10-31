@@ -1,7 +1,4 @@
-"""
-Tests for Binary Tree
-"""
-
+import pytest
 from code_challenges.trees.trees import BinaryTree , Node, Binary_Search_Tree
 
 
@@ -156,8 +153,26 @@ def test_Add_to_root():
     tree.add('5')
     assert tree.root.data == '5'
 
-test_bfs()
-test_bfs_2()
-test_pre_order()
-test_in_order()
-test_post_order()
+############ code_challenge 16 ############
+
+def test_get_max():
+    expected = 4    
+    tree = Binary_Search_Tree()
+    tree.add(1)
+    tree.add(2)
+    tree.add(3)
+    tree.add(4)
+    actual = tree.get_max()
+    assert actual == expected
+
+def test_max_empty_tree():
+    with pytest.raises(Exception):
+        tree = BinaryTree()
+        actual = tree.get_max()
+
+def test_max_one_Node():    
+    expected = 8    
+    tree = Binary_Search_Tree()
+    tree.add(8)
+    actual = tree.get_max()
+    assert actual == expected

@@ -38,3 +38,4 @@ To run your tests
 |stack_queue_animal_shelter|[readme](https://github.com/HaneenHaashlamoun/data-structures-and-algorithms/blob/stack-queue-animal-shelter/python/code_challenges/stack_queue_animal_shelter/README.md)|
 |stack_queue_brackets|[readme](https://github.com/HaneenHaashlamoun/data-structures-and-algorithms/blob/stack-queue-brackets/python/code_challenges/stack_queue_brackets/README.md)|
 |trees|[readme](https://github.com/HaneenHaashlamoun/data-structures-and-algorithms/blob/trees/python/code_challenges/trees/README.md)|
+|trees-max|[readme](https://github.com/HaneenHaashlamoun/data-structures-and-algorithms/blob/trees/python/code_challenges/trees/README.md)|

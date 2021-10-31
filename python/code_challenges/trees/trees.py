@@ -119,6 +119,20 @@ class BinaryTree:
         walk(self.root)
         return list_of_items
 
+    def get_max(self):
+        if not self.root:
+            raise Exception("empty")
+        self.max_val = self.root.data
+        def max_node(node):
+            if node.data > self.max_val:
+                self.max_val = node.data
+            if node.left:
+                max_node(node.left)
+            if node.right:
+                max_node(node.right)
+            return self.max_val
+        return max_node(self.root)
+
 
 class Binary_Search_Tree(BinaryTree):
     def __init__(self):
@@ -126,7 +140,7 @@ class Binary_Search_Tree(BinaryTree):
 
     def add(self, data):
         if not self.root:
-            self.root = Node(data)    
+            self.root = Node(data)
         else:
             def walk(root):
                 if data <= root.data:
@@ -138,7 +152,7 @@ class Binary_Search_Tree(BinaryTree):
                     if root.right:
                         walk(root.right)
                     else:
-                        root.right = Node(data)                
+                        root.right = Node(data)
             return walk(self.root)
 
     def contains(self, data):
