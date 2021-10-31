@@ -22,10 +22,6 @@ https://github.com/HaneenHaashlamoun/data-structures-and-algorithms/pull/25
     - Add : Adds a new node with that value in the correct location in the binary search tree.
     - Contains : Returns: boolean indicating whether or not the value is in the tree at least once.
 
-## Whiteboard Process
-<!-- Embedded whiteboard image -->
-![](https://codefellows.github.io/common_curriculum/data_structures_and_algorithms/Code_401/class-16/binary-tree.png)
-
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 pre order : O(n)
