@@ -31,7 +31,7 @@ To run your tests
 | Single LinkedList| [readme]() |
 | linked-list-insertions| [readme](https://github.com/HaneenHaashlamoun/data-structures-and-algorithms/blob/linked-list-kth/python/linked_list/README.md)|
 | linked-list-kth| [readme](https://github.com/HaneenHaashlamoun/data-structures-and-algorithms/blob/linked-list-kth/python/linked_list/README.md) |
-| linked-list-zip| [readme]() |
+| linked-list-zip| [readme](https://github.com/HaneenHaashlamoun/data-structures-and-algorithms/blob/linked-list-kth/python/linked_list/README.md) |
 | Reverse-linked-list| [readme]() |
 |stack-and-queue|[readme](https://github.com/HaneenHaashlamoun/data-structures-and-algorithms/blob/stack-and-queue/python/code_challenges/stack-and-queue/README.md)|
 |stack_queue_pseudo|[readme](https://github.com/HaneenHaashlamoun/data-structures-and-algorithms/blob/stack-queue-pseudo/python/code_challenges/stack_queue_pseudo/README.md)|
