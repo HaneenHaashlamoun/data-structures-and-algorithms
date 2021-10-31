@@ -2,6 +2,7 @@
 This Module defines a Node and a Binary Tree
 """
 
+
 class Node:
     def __init__(self, data, left=None, right=None):
         self.data = data
@@ -117,3 +118,45 @@ class BinaryTree:
 
         walk(self.root)
         return list_of_items
+
+
+class Binary_Search_Tree(BinaryTree):
+    def __init__(self):
+        self.root = None
+
+    def add(self, data):
+        if not self.root:
+            self.root = Node(data)    
+        else:
+            def walk(root):
+                if data <= root.data:
+                    if root.left:
+                        walk(root.left)
+                    else:
+                        root.left = Node(data)
+                elif data >= root.data:
+                    if root.right:
+                        walk(root.right)
+                    else:
+                        root.right = Node(data)                
+            return walk(self.root)
+
+    def contains(self, data):
+        if self.root == None:
+            return False
+
+        def walk(root):
+            if root:
+                if data == root.data:
+                    return True
+
+                elif root.data != data:
+
+                    if walk(root.left):
+                        return True
+
+                    if walk(root.right):
+                        return True
+
+                return False
+        return walk(self.root)

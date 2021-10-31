@@ -2,7 +2,7 @@
 Tests for Binary Tree
 """
 
-from code_challenges.trees.trees import BinaryTree , Node
+from code_challenges.trees.trees import BinaryTree , Node, Binary_Search_Tree
 
 
 def test_bfs():
@@ -134,6 +134,27 @@ def test_in_order():
     assert actual == expected
     print("test_in_order_ passed")
 
+
+
+############ Code Callenge 16 ######################
+
+def test_contains():
+    tree = Binary_Search_Tree()    
+    items = [10,54,8,4,2]
+    for item in items:
+        tree.add(item)
+    assert tree.contains(10) == True
+    assert tree.contains(54) == True
+    assert tree.contains(8) == True
+    assert tree.contains(4) == True
+    assert tree.contains(2) == True
+    assert tree.contains(1) == False
+
+
+def test_Add_to_root():
+    tree = Binary_Search_Tree()
+    tree.add('5')
+    assert tree.root.data == '5'
 
 test_bfs()
 test_bfs_2()
