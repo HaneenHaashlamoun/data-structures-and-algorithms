@@ -1,6 +1,6 @@
 # Challenge Summary
 <!-- Description of the challenge -->
-https://github.com/HaneenHaashlamoun/data-structures-and-algorithms/pull/25
+https://github.com/HaneenHaashlamoun/data-structures-and-algorithms/pull/28
 
 - [x] Write this method for the Binary Tree class
 find maximum value
