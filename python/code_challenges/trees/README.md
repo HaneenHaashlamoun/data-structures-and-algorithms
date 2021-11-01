@@ -1,4 +1,29 @@
 # Challenge Summary
+<!-- Description of the challenge -->
+https://github.com/HaneenHaashlamoun/data-structures-and-algorithms/pull/28
+
+- [x] Write this method for the Binary Tree class
+find maximum value
+    Arguments: none
+    Returns: number
+- [x] Find the maximum value stored in the tree.
+    You can assume that the values stored in the Binary Tree will be numeric.
+
+## Whiteboard Process
+<!-- Embedded whiteboard image -->
+![img](tree_max.jpg)
+
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+**recursion**
+time : O(n)
+space : O(1)
+
+
+==============================================================================
+
+
+# Challenge Summary
 https://github.com/HaneenHaashlamoun/data-structures-and-algorithms/pull/25
 
 <!-- Description of the challenge -->
