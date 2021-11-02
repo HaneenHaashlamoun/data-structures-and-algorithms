@@ -1,5 +1,26 @@
 # Challenge Summary
 <!-- Description of the challenge -->
+https://github.com/HaneenHaashlamoun/data-structures-and-algorithms/pull/29
+
+- [x] Write a function called breadth first
+    Arguments: tree
+    Return: list of all values in the tree, in the order they were encountered
+
+## Whiteboard Process
+<!-- Embedded whiteboard image -->
+![img](tree-breadth-first.jpg)
+
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+function breadth_first return tree nodes as tree
+
+time : O(n)
+space : O(n)
+
+==============================================================================
+
+# Challenge Summary
+<!-- Description of the challenge -->
 https://github.com/HaneenHaashlamoun/data-structures-and-algorithms/pull/28
 
 - [x] Write this method for the Binary Tree class

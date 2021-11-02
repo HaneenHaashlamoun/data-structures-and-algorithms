@@ -32,20 +32,9 @@ class BinaryTree:
         self.root = None
 
     def bfs(self):
-        """
-        A binary tree method which returns a list of items that it contains
-
-        input: None
-
-        output: tree items
-        """
-        # Queue breadth <-- new Queue()
         breadth = Queue()
-        # breadth.enqueue(root)
         breadth.enqueue(self.root)
-
         list_of_items = []
-
         while breadth.peek():
             front = breadth.dequeue()
             list_of_items += [front.data]
@@ -59,15 +48,6 @@ class BinaryTree:
         return list_of_items
 
     def pre_order(self):
-        """
-        A binary tree method which returns a list of items that it contains
-
-        input: None
-
-        output: tree items
-
-        sub method : walk () to make the recursion staff
-        """
         list_of_items = []
 
         def walk(node):
@@ -82,9 +62,6 @@ class BinaryTree:
         return list_of_items
 
     def in_order(self):
-        """
-        function to in order the list using Trees
-        """
         list_of_items = []
 
         def walk(node):
@@ -99,13 +76,6 @@ class BinaryTree:
         return list_of_items
 
     def post_order(self):
-        """
-        A binary tree method which returns a list of items in post order 
-
-        input: None
-
-        output: tree items
-        """
         list_of_items = []
 
         def walk(node):
@@ -123,6 +93,7 @@ class BinaryTree:
         if not self.root:
             raise Exception("empty")
         self.max_val = self.root.data
+
         def max_node(node):
             if node.data > self.max_val:
                 self.max_val = node.data
@@ -132,6 +103,19 @@ class BinaryTree:
                 max_node(node.right)
             return self.max_val
         return max_node(self.root)
+
+    def breadth_first(self):
+      queue = Queue()
+      queue.enqueue(self.root)
+      node_val = []
+      while queue.peek():
+          front = queue.dequeue()
+          node_val += [front.data]
+          if front.left:
+              queue.enqueue(front.left)
+          if front.right:
+              queue.enqueue(front.right)
+      return node_val
 
 
 class Binary_Search_Tree(BinaryTree):
