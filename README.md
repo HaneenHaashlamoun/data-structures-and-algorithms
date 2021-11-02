@@ -40,3 +40,4 @@ To run your tests
 |trees|[readme](https://github.com/HaneenHaashlamoun/data-structures-and-algorithms/blob/trees/python/code_challenges/trees/README.md)|
 |trees-max|[readme](https://github.com/HaneenHaashlamoun/data-structures-and-algorithms/blob/trees/python/code_challenges/trees/README.md)|
 |tree-breadth-first|[readme](https://github.com/HaneenHaashlamoun/data-structures-and-algorithms/blob/trees/python/code_challenges/trees/README.md)|
+|tree-fizz-buzz|[readme](https://github.com/HaneenHaashlamoun/data-structures-and-algorithms/blob/trees/python/code_challenges/trees/README.md)|
