@@ -117,6 +117,27 @@ class BinaryTree:
               queue.enqueue(front.right)
       return node_val
 
+    def tree_fizz_buzz(tree):
+        fizz_buzz_list = []
+        if tree.root:
+            node= tree.root
+            def walk(node):
+                if node.data % 3 == 0 and node.data % 5 == 0:
+                    node.data = "FizzBuzz"
+                elif node.data % 3 == 0:
+                    node.data = "Fizz"
+                elif node.data % 5 == 0:
+                    node.data = "Buzz"
+                else:
+                    node.data = str(node.data)            
+                if node.left:
+                    walk(node.left)
+                if node.right:
+                    walk(node.right) 
+                fizz_buzz_list.append(node.data)                   
+            walk(node)            
+            return fizz_buzz_list
+
 
 class Binary_Search_Tree(BinaryTree):
     def __init__(self):
