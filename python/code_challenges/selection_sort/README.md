@@ -2,7 +2,7 @@
 <!-- Description of the challenge -->
 https://github.com/HaneenHaashlamoun/data-structures-and-algorithms/pull/31
 
-- [ ] Top-level README “Table of Contents” is updated
+- [x] Top-level README “Table of Contents” is updated
  - [x] README for this challenge is complete
        - [x] Summary, Description, Approach & Efficiency, Solution
        - [x] Picture of whiteboard
