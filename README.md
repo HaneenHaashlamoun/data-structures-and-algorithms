@@ -43,3 +43,4 @@ To run your tests
 |tree-fizz-buzz|[readme](https://github.com/HaneenHaashlamoun/data-structures-and-algorithms/blob/trees/python/code_challenges/trees/README.md)|
 |selection_sort|[readme](https://github.com/HaneenHaashlamoun/data-structures-and-algorithms/blob/selection_sort/python/code_challenges/selection_sort/README.md)|
 |merge_sort|[readme](https://github.com/HaneenHaashlamoun/data-structures-and-algorithms/blob/merge_sort/python/code_challenges/merge_sort/README.md)|
+|hash_table|[readme](https://github.com/HaneenHaashlamoun/data-structures-and-algorithms/tree/hashtable/python/code_challenges/hash_table/README.md)|
