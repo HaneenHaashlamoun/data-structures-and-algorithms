@@ -1,3 +1,32 @@
+# Challenge Summary
+<!-- Description of the challenge -->
+## Code Challenge: Class 31
+- [x] Write a function called repeated word that finds the first word to occur more than once in a string
+    - Arguments: string
+    - Return: string
+
+## Whiteboard Process
+<!-- Embedded whiteboard image -->
+![hr](hashmap_repeated_word.jpg)
+
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+Time = O(n)
+Space = O(n)
+
+## Solution
+<!-- Show how to run your code, and examples of it in action -->
+define a function takes a string as its argument
+create an instance of hashtable
+convert the string into list
+loop over the elements to
+convert to lower
+check if the hash table already contains the element "word"
+return the first element that is have been repeated.
+
+
+---------------------------------------------------
+
 # Hashtables
 
 https://github.com/HaneenHaashlamoun/data-structures-and-algorithms/pull/33
