@@ -1,5 +1,7 @@
 # Challenge Summary
 <!-- Description of the challenge -->
+https://github.com/HaneenHaashlamoun/data-structures-and-algorithms/pull/35
+
 ## Code Challenge: Class 31
 - [x] Write a function called repeated word that finds the first word to occur more than once in a string
     - Arguments: string
