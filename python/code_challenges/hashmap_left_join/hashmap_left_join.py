@@ -40,21 +40,12 @@ class HashTable:
       index = self.__hash(key)
       return True if self.__buckets[index] else False
 
-
-
-def left_join(table1:HashTable, table2:HashTable)  :
-    main_list = []
-
-    for table1.__buckets[index].value[0] in table1:
-        inner_list = []
-        if table2.contains(key):
-            inner_list.append(key)
-            inner_list.append(key.value)
-            inner_list.append(table2.key.value)
-        else :
-            inner_list.append(key)
-            inner_list.append(key.value)
-            inner_list.append('None')
-        if inner_list.length > 0:
-            main_list.append(inner_list)
-    return main_list
+def left_join(hash1:HashTable, hash2:HashTable):
+    arr = []
+    for i in range(len(hash1._HashTable__buckets)):
+        if hash1._HashTable__buckets[i]:
+            if hash2.contains(hash1._HashTable__buckets[i].head.value[0]):
+                arr.append([hash1._HashTable__buckets[i].head.value[0],hash1._HashTable__buckets[i].head.value[1],hash2._HashTable__buckets[i].head.value[1]])
+            else:
+                arr.append([hash1._HashTable__buckets[i].head.value[0],hash1._HashTable__buckets[i].head.value[1],None])
+    return arr
