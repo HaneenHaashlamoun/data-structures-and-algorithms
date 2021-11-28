@@ -14,23 +14,23 @@ class LinkedList:
 
 class HashTable:
     def __init__(self, size=1024):
-        self.__size = size
-        self.__buckets = [None] * size
+        self.size = size
+        self.buckets = [None] * size
 
-    def __hash(self, key):
-        return sum([ord(char) for char in key]) * 7 % self.__size
+    def hash(self, key):
+        return sum([ord(char) for char in key]) * 7 % self.size
 
     def add(self, key, value):
-        index = self.__hash(key)
-        if not self.__buckets[index]:
-            self.__buckets[index] = LinkedList()
+        index = self.hash(key)
+        if not self.buckets[index]:
+            self.buckets[index] = LinkedList()
         my_value = [key, value]
-        self.__buckets[index].insert(my_value)
+        self.buckets[index].insert(my_value)
 
     def get(self, key):
-        index = self.__hash(key)
-        if self.__buckets[index]:
-            linked_list = self.__buckets[index]
+        index = self.hash(key)
+        if self.buckets[index]:
+            linked_list = self.buckets[index]
             current = linked_list.head
             while current:
                 if current.value[0] == key:
@@ -39,22 +39,22 @@ class HashTable:
         return None
 
     def contains(self, key):
-        index = self.__hash(key)
-        return True if self.__buckets[index] else False
+        index = self.hash(key)
+        return True if self.buckets[index] else False
 
 
 def left_join(hash1: HashTable, hash2: HashTable):
     arr = []
-    if len(hash1._HashTable__buckets) < 0 or len(hash2._HashTable__buckets) < 0:
+    if len(hash1.buckets) < 0 or len(hash2.buckets) < 0:
         return 'hash table is empty'
-    for i in range(len(hash1._HashTable__buckets)):
-        if hash1._HashTable__buckets[i]:
-            if hash2.contains(hash1._HashTable__buckets[i].head.value[0]):
-                arr.append([hash1._HashTable__buckets[i].head.value[0],
-                           hash1._HashTable__buckets[i].head.value[1], hash2._HashTable__buckets[i].head.value[1]])
+    for i in range(len(hash1.buckets)):
+        if hash1.buckets[i]:
+            if hash2.contains(hash1.buckets[i].head.value[0]):
+                arr.append([hash1.buckets[i].head.value[0],
+                           hash1.buckets[i].head.value[1], hash2.buckets[i].head.value[1]])
             else:
-                arr.append([hash1._HashTable__buckets[i].head.value[0],
-                           hash1._HashTable__buckets[i].head.value[1], None])
+                arr.append([hash1.buckets[i].head.value[0],
+                           hash1.buckets[i].head.value[1], None])
     return arr
 
 
