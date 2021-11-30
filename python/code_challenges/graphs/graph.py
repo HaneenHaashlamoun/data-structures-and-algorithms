@@ -63,6 +63,12 @@ class Graph:
 
     def get_nodes(self):
         return self.adjacency_list.keys()
+    
+    def get_node(self, value):
+        # self.get_nodes()
+        for vertex in self.get_nodes() :
+            if vertex.value == value:
+                return vertex
 
     def get_neighbors(self, vertex):
         return self.adjacency_list.get(vertex, [])
@@ -91,35 +97,19 @@ class Graph:
 ############# Code Challenge 37 ##########################
 
 
-def business_trip(graph: Graph, cities_list: List):
+def business_trip(graph: Graph, cities_list: list):
     if len(cities_list) > 1:
         # to check if the city exist in the graph
-        if (cities_list[0] in list(graph.get_nodes())) and (cities_list[1] in list(graph.get_nodes())):
-            print('Valid Cities')
-            neighbors = graph.get_neighbors(cities_list[1])
-            if neighbors:
-                for neighbor in neighbors:
-                    if cities_list[0] == neighbor.vertex:
-                        return (True, neighbor.weight)
-                    else:
-                        return(False, '$0')
-
-        #     result = (bool, str)
-        #         # for city in range(len(cities_list)):
-        #         for neighbor in graph.get_neighbors(cities_list[1]):
-        #             if cities_list[0] == neighbor.vertex:
-        #                 result = (True, neighbor.weight)
-        #             elif cities_list[1] == neighbor.vertex:
-        #                 result = (True, neighbor.weight)
-        #             else:
-        #                 result = (False, '$0')
-        #         return result
-        #     else:
-        #         return('NO City')
-        else:
+        if not (cities_list[0] in [vertex.value for vertex in graph.get_nodes()]) or not (cities_list[1] in [vertex.value for vertex in graph.get_nodes()]):
             return('NO City')
-
-
+        node_vertex = graph.get_node(cities_list[0])
+        neighbors = graph.get_neighbors(node_vertex)
+        if neighbors:# check if the neighbors are in each others lis 
+            for neighbor in neighbors:
+                if cities_list[1] == neighbor.vertex.value:
+                    return (True, f'${neighbor.weight}')                
+        return(False, '$0')
+        
 graph = Graph()
 test = 'test'
 # Cities (nodes / vertex)
@@ -141,15 +131,61 @@ graph.add_edge(arendelle, monstroplolis, 42)
 graph.add_edge(monstroplolis, naboo, 73)
 graph.add_edge(naboo, narnia, 250)
 
-# graph.add_edge(metroville, pandora, 82)
-# graph.add_edge(arendelle, pandora, 150)
-# graph.add_edge(arendelle, metroville, 99)
-# graph.add_edge(monstroplolis, metroville, 105)
-# graph.add_edge(naboo, metroville, 26)
-# graph.add_edge(narnia, metroville, 37)
-# graph.add_edge(monstroplolis, arendelle, 42)
-# graph.add_edge(naboo, monstroplolis, 73)
-# graph.add_edge(narnia, naboo, 250)
+
+graph.add_edge(metroville, pandora, 82)
+graph.add_edge(arendelle, pandora, 150)
+graph.add_edge(arendelle, metroville, 99)
+graph.add_edge(monstroplolis, metroville, 105)
+graph.add_edge(naboo, metroville, 26)
+graph.add_edge(narnia, metroville, 37)
+graph.add_edge(monstroplolis, arendelle, 42)
+graph.add_edge(naboo, monstroplolis, 73)
+graph.add_edge(narnia, naboo, 250)
+
+
 
 path = [metroville, pandora]
 print(business_trip(graph, path))
+
+# def business_trip1(graph, trip):
+#     cost = 0
+#     m = {}
+#     for i in range(len(trip)):
+#         for city in graph.get_neighbors(trip[0]):
+#             m[city.vertex.value] = f'{city.weight}'
+#     cost=m.get(trip[1].value)
+#     if cost is not None:
+#         return f'There is a Road from {trip[0].value} to {trip[1].value} and it will cost {cost}$'
+#     else :
+#         return f'There is No Road'
+
+# def business_trip2(graph,cities):
+#     j = True
+#     cost = 0
+#     for i in range(len(cities)-1):
+#         for city in graph.get_neighbors(cities[i]):
+#             if cities[i+1]==city[0]:
+#                 cost+=city[1]
+#                 break
+#             else:
+#                 j=False
+#     if j==False:
+#             cost=0
+#     return j, f'${cost}'
+
+
+
+
+
+      #     result = (bool, str)
+        #         # for city in range(len(cities_list)):
+        #         for neighbor in graph.get_neighbors(cities_list[1]):
+        #             if cities_list[0] == neighbor.vertex:
+        #                 result = (True, neighbor.weight)
+        #             elif cities_list[1] == neighbor.vertex:
+        #                 result = (True, neighbor.weight)
+        #             else:
+        #                 result = (False, '$0')
+        #         return result
+        #     else:
+        #         return('NO City')
